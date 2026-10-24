@@ -1,99 +1,165 @@
-*{
-    margin: 0; padding: 0; box-sizing: border-box;
-}
-body{
-    font-family: sans-serif;
-}
-.main__container{
-    padding: 0px 165px;
+/* Сброс базовых стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+}
 
-.extra__info{
+/* Главный контейнер: 1200px по центру */
+.main__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Верхняя полоска (контакты) */
+.main__container {
+    padding-top: 10px;
+}
+.extra__info {
     display: flex;
     justify-content: space-between;
-    border-bottom: 0.5px gray solid;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    font-size: 14px;
 }
-.info__card{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #333333;
+.info__card p {
+    margin-bottom: 4px;
 }
 
-
-
-.header__container{
-    margin: 20px 0px;
+/* Шапка */
+.header__container {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
 }
 
-
-
-.nav__buttons{
-    text-decoration: none;
+.nav__buttons {
     display: flex;
-    gap: 46px;
+    gap: 30px;
     list-style-type: none;
-    
 }
-.nav__buttons>li>a{
+
+.nav__buttons > li > a {
     text-decoration: none;
     color: #333333;
+    font-weight: 500;
 }
-.order__call__button{
 
+.order__call__button {
     color: white;
     background-color: rgb(34, 107, 245);
     border: none;
     border-radius: 5px;
-    padding: 10px 40px;
+    padding: 10px 25px;
+    cursor: pointer;
 }
 
-
-
-.hero__block{
-    margin-top: 100px;
-}
-.hero__block__container{
-    display: inline-flex;
-    justify-content: space-between;
+/* Главный экран (Hero) */
+.hero__block {
+    margin-top: 60px;
 }
 
-.hero__block__text>p{
-    margin: 30px 0px;   
-}
-.hero__block__img{
-    width: 900px;
-}
-
-.hero__block__button{
-    color: white;
-    background-color: rgb(34, 107, 245);
-    border: none;
-    border-radius: 5px;
-    padding: 20px 60px;
-}
-
-
-.services__block{
-    margin-top: 30px;
-    text-align: center;
-    
-}
-.cards__container{
-    padding-top: 48px;
-    padding-bottom: 58px;
+.hero__block__container {
     display: flex;
-
-    justify-content:space-between;
-    gap: 15px;
-
-  
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px; /* Расстояние между текстом и картинкой */
 }
-.card__services{
-  
+
+.hero__block__text {
+    flex: 1; /* Текст занимает половину */
+}
+
+.hero__block__text h1 {
+    font-size: 48px; /* Убрал 60px из HTML, тут смотрится лучше */
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero__block__text p {
+    margin: 20px 0;
+    line-height: 1.5;
+    color: #666;
+}
+
+.hero__block__button {
+    color: white;
+    background-color: rgb(34, 107, 245);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 40px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero__block__image__container {
+    flex: 1; /* Картинка занимает половину */
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Картинка больше не 900px, а подстраивается под экран */
+.hero__block__img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Блок Услуг */
+.services__block {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.services__block h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Сетка карточек */
+.cards__container {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card__services {
     text-align: left;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     background-color: #F4F6FA;
+    flex: 1; /* Все 4 карточки одинаковой ширины */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__services h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.card__services p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Картинки в карточках */
+.card__services img {
+    max-width: 100%;
+    height: 150px; /* Одинаковая высота для всех картинок */
+    object-fit: contain; /* Картинка не искажается */
+    display: block;
+    margin: 0 auto;
 }
