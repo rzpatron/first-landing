@@ -4,3 +4,96 @@
 body{
     font-family: sans-serif;
 }
+.main__container{
+    padding: 0px 165px;
+}
+
+
+.extra__info{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px gray solid;
+}
+.info__card{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333333;
+}
+
+
+
+.header__container{
+    margin: 20px 0px;
+    display: flex;
+    justify-content:space-between;
+}
+
+
+
+.nav__buttons{
+    text-decoration: none;
+    display: flex;
+    gap: 46px;
+    list-style-type: none;
+    
+}
+.nav__buttons>li>a{
+    text-decoration: none;
+    color: #333333;
+}
+.order__call__button{
+
+    color: white;
+    background-color: rgb(34, 107, 245);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+}
+
+
+
+.hero__block{
+    margin-top: 100px;
+}
+.hero__block__container{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.hero__block__text>p{
+    margin: 30px 0px;   
+}
+.hero__block__img{
+    width: 900px;
+}
+
+.hero__block__button{
+    color: white;
+    background-color: rgb(34, 107, 245);
+    border: none;
+    border-radius: 5px;
+    padding: 20px 60px;
+}
+
+
+.services__block{
+    margin-top: 30px;
+    text-align: center;
+    
+}
+.cards__container{
+    padding-top: 48px;
+    padding-bottom: 58px;
+    display: flex;
+
+    justify-content:space-between;
+    gap: 15px;
+
+  
+}
+.card__services{
+  
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F4F6FA;
+}
