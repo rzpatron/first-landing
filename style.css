@@ -163,3 +163,201 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+
+
+.questions__block {
+    margin: 80px 0px;
+}
+
+.questions__block h3 {
+    font-size: 32px;
+    margin-bottom: 10px;    
+}
+
+.questions__block__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.questions__block__text__container {
+    flex: 1;
+}
+
+.questions__block__img__container {
+    flex: 1; /* Картинка занимает половину */
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.us__location__block {
+    margin: 120px 0;
+}
+
+.us__location__block__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.us__location__text h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.us__location__map img {
+    display: block;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.photos__block {
+    margin: 80px 0px;
+}
+
+.photo__container{
+    display: flex;
+    justify-content: center;
+}
+
+.photo__container img{
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.photos__block h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+/* Блок с формой */
+.form__block {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #1a1a1a; /* Темный фон, как на макете */
+    border-radius: 15px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    /* Если захочешь добавить фото механика на фон, раскомментируй строки ниже: */
+    background-image: url('img/formImg.png'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.form__container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px; /* Форма не будет слишком широкой */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.form__container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form__container input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.form__container input:focus {
+    outline: none;
+    border-color: rgb(34, 107, 245); /* Синяя рамка при клике */
+}
+
+.form__button {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(34, 107, 245);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form__button:hover {
+    background-color: rgb(20, 80, 200); /* Чуть темнее при наведении */
+}
+
+/* Футер (Подвал) */
+.footer {
+    background-color: #1a1a1a; /* Темный фон, как у формы */
+    color: #a0a0a0; /* Светло-серый текст */
+    padding: 60px 0 20px 0;
+    margin-top: 80px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 40px;
+}
+
+.footer__col {
+    flex: 1;
+}
+
+.footer__col h4 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer__col p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.footer__links {
+    list-style-type: none;
+}
+
+.footer__links li {
+    margin-bottom: 10px;
+}
+
+.footer__links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer__links a:hover {
+    color: rgb(34, 107, 245); /* Синий цвет при наведении */
+}
+
+/* Нижняя полоска с копирайтом */
+.footer__bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333333;
+    font-size: 14px;
+}
