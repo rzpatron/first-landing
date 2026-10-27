@@ -460,12 +460,17 @@ body {
     }
 
     .brands__block {
-        gap: 20px;
+        gap: 40px;
         margin: 30px 0;
     }
 
     .brands__block img{
-        max-height: 40px;
+        max-height: 80px;
+    }
+
+    .us__location__block__container{
+        flex-direction: column;
+        
     }
 
     .form__block{
