@@ -460,17 +460,29 @@ body {
     }
 
     .brands__block {
+        display: flex;
+        flex-wrap: wrap;
         gap: 40px;
         margin: 30px 0;
+        width: 100%;
     }
 
     .brands__block img{
-        max-height: 80px;
+        max-width: 80px;
+        height: auto;
+        object-fit: contain;
     }
 
     .us__location__block__container{
-        flex-direction: column;
-        
+        flex-direction: column;   
+    }
+    .map__img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     .form__block{
