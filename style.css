@@ -468,7 +468,7 @@ body {
     }
 
     .brands__block img{
-        max-width: 80px;
+        max-width: 60px;
         height: auto;
         object-fit: contain;
     }
