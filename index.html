@@ -33,12 +33,19 @@
             <div class="logo">
                 <img src="img/logo.png" alt="">
             </div>
-            <nav class="navigation__container">
+
+            <button class="burger__menu" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navigation__container" id="nav__menu">
                 <ul class="nav__buttons">
                     <li><a href="#">Это мы</a></li>
                     <li><a href="#">Почему мы?</a></li>
-                    <li><a href="#">А вот поэтому</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
             <button class="order__call__button">Заказать звонок</button>
@@ -62,7 +69,7 @@
             </div>
         </div>
 
-        <div class="services__block">
+        <div class="services__block" id="services">
 
             <h3>Любые услуги за ваши денежки</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad officiis, temporibus id autem laudantium.</p>
@@ -158,10 +165,10 @@
     </div>
         <div class="form__block">
             <div class="form__container">
-                <form action="" method="post">
+                <form id="contact__form" method="post">
                     <h2>Остались вопросы?</h2>
-                    <input type="text" placeholder="Имя" name="name">
-                    <input type="text" placeholder="Номер телефона" name="tel">
+                    <input type="text" placeholder="Имя" id="name" name="name">
+                    <input type="text" placeholder="Номер телефона" id="tel" name="tel">
                     <button class="form__button" type="submit">Отправить</button>
                 </form>
             </div>
@@ -179,7 +186,7 @@
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
-            <div class="footer__col">
+            <div class="footer__col" id="contacts">
                 <h4>Контакты</h4>
                 <p>+7 (800) 555 35 35</p>
                 <p>+7 (708) 803 88 88</p>
@@ -201,6 +208,7 @@
                 <p>Copyright © 2026 EURO TRUCK. Все права защищены.</p>
         </div>
     </footer> 
+    <script src="script.js"></script>
 </body>
 
 </html>
