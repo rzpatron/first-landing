@@ -524,6 +524,10 @@ body {
         text-align: center;
     }
 
+    .footer__links{
+        padding-top: 20px;
+    }
+
     .burger__menu {
         display: flex;
         position: absolute;
